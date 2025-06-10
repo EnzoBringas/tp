@@ -8,7 +8,8 @@
 		"generate-cache": "node generate-cache-list.cjs",
 		"build": "vite build && npm run generate-cache",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''"
+		"prepare": "svelte-kit sync || echo ''",
+		"deploy": "npm run build && gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
@@ -16,6 +17,7 @@
 		"@sveltejs/kit": "^2.21.2",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@vite-pwa/sveltekit": "^1.0.0",
+		"gh-pages": "^6.3.0",
 		"svelte": "^5.0.0",
 		"tailwindcss": "^4.1.8",
 		"vite": "^6.2.6",
