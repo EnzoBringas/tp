@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"generate-cache": "node generate-cache-list.cjs",
-		"build": "vite build && npm run generate-cache",
+		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"deploy": "npm run build && gh-pages -d build -t true"
