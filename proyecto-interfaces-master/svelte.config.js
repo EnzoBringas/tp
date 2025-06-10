@@ -12,7 +12,7 @@ const config = {
       precompress: false
     }),
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/tp' : '',
+      base: process.env.NODE_ENV === 'production' ? '/TP' : '',
       relative: false
     },
     appDir: 'internal',
